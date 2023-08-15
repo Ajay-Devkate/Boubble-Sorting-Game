@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(102, 224, 141, 0.586);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pannel {
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.764);
+
+}
+
+.ptop {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(64, 212, 118);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25%;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.elem h2 {
+    font-size: 20px;
+}
+
+.elem .box {
+    background-color: white;
+    color: rgb(52, 175, 97);
+    padding: 5px;
+    border-radius: 10%;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.pbtm {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 50px;
+}
+
+.boubble {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(64, 212, 118);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.401);
+}
+
+.boubble:hover {
+    cursor: pointer;
+    background-color: rgb(50, 153, 88);
+}
+
+
+
+
+
+/* Media Qurey */
+
+@media (width < 450px) {
+    .ptop {
+        padding: 0 5%;
+    }
+
+    .elem {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .elem h2 {
+        font-size: 15px;
+    }
+
+    .elem .box {
+        padding: 2px 5px;
+        color: rgb(52, 175, 97);
+        font-size: 14px;
+    }
+
+    .boubble {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pbtm {
+        padding: 30px 10px;
+        gap: 18px;
+        font-size: 30px;
+    }
+}
